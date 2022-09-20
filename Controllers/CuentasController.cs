@@ -40,6 +40,7 @@ namespace Presupuesto.Controllers
 
             return View(modelo);
         }
+
         public async Task<IActionResult> Detalle(int id, int mes, int año)
         {
             var usuarioId = servicioUsuarios.ObtenerUsuarioId();
